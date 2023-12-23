@@ -2,6 +2,7 @@ import "./App.css";
 import { Heading } from "./Heading";
 import { Oscar } from "./Oscar";
 import { Button } from "./components/Button";
+import { Container } from "./components/Container";
 import { Greet } from "./components/Greet";
 import { Input } from "./components/Input";
 import { Person } from "./components/Person";
@@ -21,6 +22,7 @@ function App() {
   ];
   return (
     <div className="App">
+      {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
       {/* <Greet name="Enock" messageCount={10} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} /> */}
@@ -35,12 +37,12 @@ function App() {
           console.log("Button clicked", event, id);
         }}
       /> */}
-      <Input
+      {/* <Input
         value=""
         handleChange={(event) => {
           console.log(event);
         }}
-      />
+      /> */}
     </div>
   );
 }
