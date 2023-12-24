@@ -9,6 +9,8 @@ import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { LoggedIn } from "./components/state/LoggedIn";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { Box } from "./components/context/Box";
 
 function App() {
   const personName = {
@@ -23,8 +25,12 @@ function App() {
   ];
   return (
     <div className="App">
-      <LoggedIn />
-      {/* <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+
+      {/* <LoggedIn />
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
       {/* <Greet name="Enock" messageCount={10} isLoggedIn={false} />
       <Person name={personName} />
       <PersonList names={nameList} /> */}
