@@ -13,6 +13,7 @@ import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
 import { User } from "./components/context/User";
+import { MutableRef } from "./components/ref/MutableRef";
 
 function App() {
   const personName = {
@@ -27,9 +28,10 @@ function App() {
   ];
   return (
     <div className="App">
-      <UserContextProvider>
+      <MutableRef />
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
       {/* <ThemeContextProvider>
         <Box />
       </ThemeContextProvider> */}
