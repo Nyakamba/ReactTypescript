@@ -15,7 +15,7 @@ export const useCreateUser = () => {
         prevUsers ? [user, ...prevUsers] : [user]
       );
 
-      // queryClient.invalidateQueries([key])      // queryClient.invalidateQueries([key])
+      // queryClient.invalidateQueries([key])      // queryClient.
     },
   });
 };
